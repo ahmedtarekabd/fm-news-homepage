@@ -18,8 +18,10 @@ const Hero = () => {
         width={1440}
         height={0}
       />
-      <div className="flex flex-col lg:flex-row my-8 gap-4 justify-center">
-        <h1 className="text-6xl font-bold">The Bright Future of Web 3.0?</h1>
+      <div className="grid grid-cols-1 lg:grid-cols-2 my-8 gap-4 justify-center">
+        <h1 className="text-6xl font-bold text-destructive-foreground">
+          The Bright Future of Web 3.0?
+        </h1>
         <div className="flex flex-col items-start justify-center gap-4">
           <p className="text-lg">
             We dive into the next evolution of web that claims to put the power

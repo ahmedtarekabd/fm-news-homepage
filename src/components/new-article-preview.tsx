@@ -8,7 +8,7 @@ const NewArticlePreview = ({
   return (
     <div className="space-y-2">
       <p className="text-xl font-bold">{title}</p>
-      <p className="text-sm">{desciption}</p>
+      <p className="text-sm text-foreground font-semibold">{desciption}</p>
     </div>
   );
 };

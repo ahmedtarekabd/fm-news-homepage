@@ -7,11 +7,6 @@ import React from "react";
 const NewArticles = () => {
   const newArticles = [
     {
-      title: "The Bright Future of Web 3.0?",
-      description:
-        "We dive into the next evolution of web that claims to put the power of platforms back into the hands of the people. But is it really fulfilling",
-    },
-    {
       title: "Hydrogen vs Electric Cars",
       description: "Will hydrogen-fueled cars ever catch up to EVs?",
     },
@@ -27,11 +22,11 @@ const NewArticles = () => {
     },
   ];
   return (
-    <Card className="w-full md:w-[1000px] sm:w-[500px]">
+    <Card className="w-full h-full">
       <CardHeader>
-        <CardTitle className="text-accent">New</CardTitle>
+        <CardTitle className="text-accent text-4xl">New</CardTitle>
       </CardHeader>
-      <CardContent className="flex flex-col gap-4">
+      <CardContent className="flex flex-col gap-4 h-min">
         {newArticles.map((article, index) => (
           <React.Fragment key={index}>
             <NewArticlePreview
@@ -39,7 +34,7 @@ const NewArticles = () => {
               desciption={article.description}
             />
             {index !== newArticles.length - 1 && (
-              <Separator className="bg-muted" />
+              <Separator className="bg-foreground " />
             )}
           </React.Fragment>
         ))}

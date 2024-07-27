@@ -7,10 +7,15 @@ export default function Home() {
     <>
       <div className="container">
         <Navbar />
-        <div className="flex gap-8 flex-col lg:flex-row">
-          <Hero />
-          <NewArticles />
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 my-4">
+          <div className="lg:col-span-8">
+            <Hero />
+          </div>
+          <div className="lg:col-span-4">
+            <NewArticles />
+          </div>
         </div>
+        
       </div>
     </>
   );
