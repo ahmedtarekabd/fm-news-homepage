@@ -1,4 +1,3 @@
-import { title } from "process";
 import NewArticlePreview from "./new-article-preview";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Separator } from "./ui/separator";
@@ -26,7 +25,7 @@ const NewArticles = () => {
       <CardHeader>
         <CardTitle className="text-accent text-4xl">New</CardTitle>
       </CardHeader>
-      <CardContent className="flex flex-col gap-4 h-min">
+      <CardContent className="flex flex-col gap-10">
         {newArticles.map((article, index) => (
           <React.Fragment key={index}>
             <NewArticlePreview

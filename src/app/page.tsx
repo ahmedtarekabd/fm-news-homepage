@@ -1,6 +1,7 @@
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
 import NewArticles from "@/components/new-articles";
+import TopArticles from "@/components/top-articles";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
             <NewArticles />
           </div>
         </div>
-        
+        <TopArticles />
       </div>
     </>
   );
