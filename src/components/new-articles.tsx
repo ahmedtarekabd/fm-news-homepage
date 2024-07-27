@@ -1,25 +1,11 @@
+import { getNewArticles } from "@/actions/articles/articles";
 import NewArticlePreview from "./new-article-preview";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Separator } from "./ui/separator";
 import React from "react";
 
 const NewArticles = () => {
-  const newArticles = [
-    {
-      title: "Hydrogen vs Electric Cars",
-      description: "Will hydrogen-fueled cars ever catch up to EVs?",
-    },
-    {
-      title: "The Downsides of AI Artistry",
-      description:
-        "What are the possible adverse effects on-demand AI image generation?",
-    },
-    {
-      title: "Is VC Funding Drying Up?",
-      description:
-        "Private funding by VC firms is down 50% YOY. We take a look at what means.",
-    },
-  ];
+  const newArticles = getNewArticles();
   return (
     <Card className="w-full h-full">
       <CardHeader>
